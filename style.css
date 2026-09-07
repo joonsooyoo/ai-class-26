@@ -1,0 +1,65 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600;700&display=swap');
+
+:root { --navy:#071b33; --blue:#1476d4; --cyan:#41c7dd; --ink:#18283a; --muted:#65758a; --line:#dce5ed; --pale:#f2f7fa; --white:#fff; --red:#e53935; --font:'Pretendard',system-ui,sans-serif; --mono:'JetBrains Mono',monospace; }
+* { box-sizing:border-box; }
+body { margin:0; background:#eef3f6; color:var(--ink); font-family:var(--font); line-height:1.7; -webkit-font-smoothing:antialiased; }
+a { color:var(--blue); }
+.site-header { position:relative; overflow:hidden; padding:4rem 1.5rem 3.5rem; text-align:center; color:white; background:linear-gradient(125deg,#06172d 0%,#0b3159 67%,#0b5572 100%); border-bottom:4px solid var(--cyan); }
+.site-header::after { content:""; position:absolute; width:390px; height:390px; right:-100px; top:-230px; border:1px solid rgba(65,199,221,.25); border-radius:50%; box-shadow:0 0 0 45px rgba(65,199,221,.05),0 0 0 95px rgba(65,199,221,.04); }
+.site-header.compact { padding:2.8rem 1.5rem 2.4rem; }
+.eyebrow,.section-label { margin:0 0 .55rem; color:var(--cyan); font-family:var(--mono); font-size:.75rem; font-weight:700; letter-spacing:.14em; }
+.site-header h1 { position:relative; z-index:1; margin:0; font-size:clamp(2rem,5vw,3.1rem); letter-spacing:-.04em; }
+.site-header h1 span { display:block; margin-top:.25rem; font-family:var(--mono); font-size:.34em; letter-spacing:.12em; color:#b7d9eb; }
+.subtitle { margin:.7rem 0 0; color:#c8d9e6; }
+nav { position:sticky; top:0; z-index:10; display:flex; justify-content:center; background:var(--navy); box-shadow:0 3px 10px rgba(3,20,39,.18); }
+nav a { position:relative; padding:1rem 1.5rem; color:#cbd8e4; font-size:.92rem; font-weight:700; text-decoration:none; }
+nav a:hover,nav a.active { color:white; background:rgba(255,255,255,.06); }
+nav a.active::after { content:""; position:absolute; left:1.5rem; right:1.5rem; bottom:0; height:3px; background:var(--cyan); }
+main { max-width:980px; margin:2rem auto; padding:3.2rem; background:white; box-shadow:0 12px 45px rgba(22,44,68,.08); }
+section+section,.exam-grid+.warning { margin-top:3.5rem; }
+h2,h3 { line-height:1.3; letter-spacing:-.025em; }
+h2 { margin:.2rem 0 1rem; color:#0b4c82; font-size:1.7rem; }
+h3 { margin:.45rem 0; }
+.hero { display:grid; grid-template-columns:1fr auto; gap:3rem; align-items:center; padding:1rem 0 3rem; border-bottom:1px solid var(--line); }
+.hero p:not(.section-label) { max-width:650px; }
+.hero-logo { display:block; width:280px; max-width:100%; height:auto; }
+.button,.video-button,.note-button { display:inline-block; margin-top:.8rem; padding:.72rem 1.1rem; color:white; background:var(--blue); border-radius:5px; font-weight:700; text-decoration:none; }
+.video-button { margin:0; background:var(--red); }
+.note-button { margin:0; background:var(--blue); }
+.card-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
+.card { padding:1.45rem; border:1px solid var(--line); border-top:4px solid var(--cyan); background:var(--pale); }
+.card span,.exam-card span,.week { color:var(--blue); font-family:var(--mono); font-size:.7rem; font-weight:700; letter-spacing:.08em; }
+.card p,.lecture-row p { margin:.25rem 0 0; color:var(--muted); font-size:.94rem; }
+.section-heading { display:flex; align-items:center; justify-content:space-between; border-bottom:2px solid var(--navy); }
+.section-heading span { color:var(--muted); font-size:.82rem; }
+.notice-list { margin:0; padding:0; list-style:none; }
+.notice-list li { display:flex; gap:1.4rem; padding:1.25rem .5rem; border-bottom:1px solid var(--line); }
+.notice-list time { min-width:64px; color:var(--blue); font-family:var(--mono); font-weight:700; }
+.notice-list p { margin:.25rem 0 0; color:var(--muted); }
+.info-box,.edit-note,.warning { padding:1.4rem 1.6rem; border-left:4px solid var(--cyan); background:var(--pale); }
+.info-box p { margin:.35rem 0; }
+.info-box strong { display:inline-block; min-width:92px; }
+.table-wrap { overflow-x:auto; }
+table { width:100%; border-collapse:collapse; }
+th,td { padding:.9rem; border:1px solid var(--line); text-align:center; }
+th { color:white; background:var(--navy); }
+.hint { color:var(--muted); font-size:.86rem; }
+.lecture-list { margin-top:1.8rem; border-top:2px solid var(--navy); }
+.lecture-row { display:flex; justify-content:space-between; gap:1.5rem; align-items:center; padding:1.4rem 1rem; border-bottom:1px solid var(--line); }
+.resource-actions { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:.55rem; }
+.pending { flex:none; padding:.45rem .75rem; color:var(--muted); background:#edf1f4; border-radius:4px; font-size:.8rem; font-weight:700; }
+.edit-note { margin-top:3rem; border-color:#f0b429; background:#fff9e9; }
+.edit-note p { margin:.25rem 0; }
+pre { overflow-x:auto; margin:.8rem 0 0; padding:.9rem; color:#d7edf6; background:var(--navy); border-radius:4px; font:12px/1.5 var(--mono); }
+code { font-family:var(--mono); }
+.exam-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; margin-top:2rem; }
+.exam-card { display:grid; grid-template-columns:auto 1fr; gap:1.25rem; padding:1.8rem; border:1px solid var(--line); background:linear-gradient(145deg,#fff,#f3f8fb); }
+.exam-number { color:#b9c9d5; font:700 2rem var(--mono); }
+dl { margin:1.2rem 0 0; }
+dl div { display:grid; grid-template-columns:65px 1fr; padding:.55rem 0; border-top:1px solid var(--line); }
+dt { font-weight:700; } dd { margin:0; color:var(--muted); }
+.warning { border-color:#e0a126; background:#fff8e6; }
+.warning p { margin:.2rem 0 0; }
+footer { padding:1rem 1.5rem 2.5rem; text-align:center; color:#708092; font-size:.82rem; }
+@media (max-width:700px) { nav { overflow-x:auto; justify-content:flex-start; } nav a { flex:none; padding:.85rem 1rem; } main { margin:0; padding:2rem 1.25rem; box-shadow:none; } .hero { grid-template-columns:1fr; } .hero-logo { width:240px; } .card-grid,.exam-grid { grid-template-columns:1fr; } .lecture-row { align-items:flex-start; flex-direction:column; } .site-header { padding:3rem 1rem 2.5rem; } }
