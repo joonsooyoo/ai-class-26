@@ -24,9 +24,15 @@ h3 { margin:.45rem 0; }
 .hero { display:grid; grid-template-columns:1fr auto; gap:3rem; align-items:center; padding:1rem 0 3rem; border-bottom:1px solid var(--line); }
 .hero p:not(.section-label) { max-width:650px; }
 .hero-logo { display:block; width:280px; max-width:100%; height:auto; }
-.button,.video-button,.note-button { display:inline-block; margin-top:.8rem; padding:.72rem 1.1rem; color:white; background:var(--blue); border-radius:5px; font-weight:700; text-decoration:none; }
+.button,.video-button,.note-button,.colab-button { display:inline-block; margin-top:.8rem; padding:.72rem 1.1rem; color:white; background:var(--blue); border-radius:5px; font-weight:700; text-decoration:none; }
 .video-button { margin:0; background:var(--red); }
 .note-button { margin:0; background:var(--blue); }
+.theory-button { background:#b52b31; }
+.practice-button { background:#087568; }
+.colab-button { margin:0; color:#513300; background:#ffcf66; }
+.resource-actions a { white-space:nowrap; }
+.resource-actions a:hover { filter:brightness(.92); }
+.resource-actions a:focus-visible { outline:3px solid var(--navy); outline-offset:3px; }
 .card-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
 .card { padding:1.45rem; border:1px solid var(--line); border-top:4px solid var(--cyan); background:var(--pale); }
 .card span,.exam-card span,.week { color:var(--blue); font-family:var(--mono); font-size:.7rem; font-weight:700; letter-spacing:.08em; }
