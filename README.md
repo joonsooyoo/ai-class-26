@@ -4,7 +4,7 @@
 
 - `index.html`: 강의 홈 및 공지
 - `syllabus.html`: 강의 소개와 평가 비율 (중간 30%, 기말 40%, 출석 10%, 과제물 20%)
-- `lectures.html`: 1주차 Orientation 자료, 2주차 YouTube 강의 2개 및 자료
+- `lectures.html`: 1주차 Orientation 자료, 2·3주차 YouTube 강의 및 Colab 실습 링크와 자료
 - `exams.html`: 시험 안내
 - `style.css`: 공통 스타일 및 모바일 대응
 
@@ -27,4 +27,4 @@ GitHub Pages는 GitHub Actions로 배포합니다. `main` 브랜치에 push하�
 
 운영 주소: https://joonsooyoo.github.io/ai-class-26/
 
-강의자료는 `asset/note/ai_week01.pdf`, `asset/note/ai_week02.pdf`에 있습니다.
+강의자료는 `asset/note/ai_week01.pdf`, `asset/note/ai_week02.pdf`, `asset/note/ai_week03.pdf`에 있습니다.
